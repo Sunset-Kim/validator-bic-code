@@ -6,7 +6,7 @@ export default [
     input: 'src/index.ts',
     output: [
       {
-        file: 'dist/bic-code.js',
+        file: 'dist/bic-code.cjs',
         format: 'cjs',
       },
       {

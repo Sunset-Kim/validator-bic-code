@@ -1,0 +1,10 @@
+{
+  "name": "validator-bic-code",
+  "version": "1.0.0",
+  "description": "A simple bic Validator",
+  "main": "src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}

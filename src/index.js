@@ -1,5 +1,5 @@
-import { validateFullBIC } from './bic-code.js';
+import { validateFullBIC } from './bic-code.ts'
 
-export default  {
-    validateFullBIC
+export default {
+  validateFullBIC,
 }

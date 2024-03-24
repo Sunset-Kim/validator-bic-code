@@ -1,5 +1,5 @@
-const { validateBICInput, convertCharToNumber } = require('./bic-code-helper.cjs')
-const { CHECK_DIGIT_INDEX, CHECK_DIGIT_BASE } = require('./bic-code.consts.cjs')
+import { convertCharToNumber, validateBICInput } from './bic-code-helper.esm.js';
+import { CHECK_DIGIT_BASE, CHECK_DIGIT_INDEX } from './bic-code.consts.esm.js';
 
 export function validateFullBIC (bic)  {
   // BIC 코드의 사용자 입력이 올바른지 확인

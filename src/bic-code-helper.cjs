@@ -1,4 +1,4 @@
-const { BIC_LENGTH, OWNER_CODE_LENGTH, EQUIPMENT_CATEGORY_CODE, ALPHABET_TO_NUMBER } = require('./bic-code.consts.js')
+const { BIC_LENGTH, OWNER_CODE_LENGTH, EQUIPMENT_CATEGORY_CODE, ALPHABET_TO_NUMBER } = require('./bic-code.consts.cjs')
 
 module.exports = {
   validateBICInput(bic)  {

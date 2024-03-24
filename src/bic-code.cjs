@@ -1,6 +1,6 @@
 
-const { validateBICInput, convertCharToNumber } = require('./bic-code-helper.js');
-const { CHECK_DIGIT_INDEX, CHECK_DIGIT_BASE } = require('./bic-code.consts.js');
+const { validateBICInput, convertCharToNumber } = require('./bic-code-helper.cjs');
+const { CHECK_DIGIT_INDEX, CHECK_DIGIT_BASE } = require('./bic-code.consts.cjs');
 
 module.exports = {
     /**

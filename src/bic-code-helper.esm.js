@@ -1,4 +1,4 @@
-import { BIC_LENGTH, OWNER_CODE_LENGTH, EQUIPMENT_CATEGORY_CODE, ALPHABET_TO_NUMBER } from './constants.js';
+import { BIC_LENGTH, OWNER_CODE_LENGTH, EQUIPMENT_CATEGORY_CODE, ALPHABET_TO_NUMBER } from './bic-code.consts.esm.js';
 
 export function validateBICInput(bic)  {
     // BIC 코드의 길이 검사

@@ -1,8 +1,17 @@
 {
   "name": "validator-bic-code",
-  "version": "1.0.0",
+  "type": "module",
+  "version": "1.0.5",
   "description": "A simple bic Validator",
-  "main": "src/index.js",
+  "main": "src/index.cjs",
+  "module": "src/index.esm.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.esm.js",
+      "require": "./src/index.cjs"
+    }
+  },
   "license": "MIT",
   "devDependencies": {
     "prettier": "^3.2.5"

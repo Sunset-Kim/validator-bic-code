@@ -1,5 +1,5 @@
-import validateFullBIC from './bic-code.esm.js';
+import { validateFullBIC } from './bic-code.esm.js';
 
-export {
+export default  {
     validateFullBIC
 }

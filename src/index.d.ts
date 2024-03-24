@@ -1,0 +1,1 @@
+export declare function validateFullBIC(bic: string): boolean;

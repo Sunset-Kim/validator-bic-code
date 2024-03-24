@@ -4,13 +4,11 @@
   "version": "1.1.0",
   "description": "A simple bic Validator",
   "main": "dist/bic-code.cjs",
-  "module": "dist/bic-code.js",
-  "types": "src/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/bic-code.js",
       "require": "./dist/bic-code.cjs",
-      "types": "./src/index.d.ts"
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
@@ -32,6 +30,7 @@
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
     "rollup": "^4.13.0",
+    "rollup-plugin-dts": "^6.1.0",
     "tslib": "^2.6.2",
     "typescript": "^5.4.3"
   }

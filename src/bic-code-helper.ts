@@ -26,5 +26,8 @@ export function validateBICInput(bic: string) {
 }
 
 export function convertCharToNumber(char: string) {
-  return ALPHABET_TO_NUMBER[char] ?? parseInt(char, 10)
+  return (
+    ALPHABET_TO_NUMBER[char as keyof typeof ALPHABET_TO_NUMBER] ??
+    parseInt(char, 10)
+  )
 }

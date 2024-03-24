@@ -1,13 +1,13 @@
-export const BIC_LENGTH = 11 // BIC 코드의 총 길이
-export const OWNER_CODE_LENGTH = 3 // Owner Code 선주코드 - BIC에 의해 관리됨. 한번 발급시 10년간 유지
-export const SERIAL_NUMBER_LENGTH = 6 // Serial number - 선주 발행한 자체적인 코드
-export const CHECK_DIGIT_INDEX = 10 // Check digit의 위치 (0부터 시작)
-export const CHECK_DIGIT_BASE = 11 // Check digit 계산을 위한 기준 값
-export const EQUIPMENT_CATEGORY_CODE = Object.freeze({
+export const BIC_LENGTH = 11 as const // BIC 코드의 총 길이
+export const OWNER_CODE_LENGTH = 3 as const // Owner Code 선주코드 - BIC에 의해 관리됨. 한번 발급시 10년간 유지
+export const SERIAL_NUMBER_LENGTH = 6 as const // Serial number - 선주 발행한 자체적인 코드
+export const CHECK_DIGIT_INDEX = 10 as const // Check digit의 위치 (0부터 시작)
+export const CHECK_DIGIT_BASE = 11 as const // Check digit 계산을 위한 기준 값
+export const EQUIPMENT_CATEGORY_CODE = {
   U: 'U', // 컨테이너를 의미
   J: 'J', // 분리 가능한 장비를 의미
   Z: 'Z', // 수송 장비(트레일러 또는 차대)를 의미
-})
+} as const
 export const ALPHABET_TO_NUMBER = {
   A: 10,
   B: 12,
@@ -35,4 +35,4 @@ export const ALPHABET_TO_NUMBER = {
   X: 36,
   Y: 37,
   Z: 38,
-}
+} as const

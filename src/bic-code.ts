@@ -1,7 +1,6 @@
 import { convertCharToNumber, validateBICInput } from './bic-code-helper.js'
 import { CHECK_DIGIT_BASE, CHECK_DIGIT_INDEX } from './bic-code.consts'
 
-
 export function validateFullBIC(bic: string) {
   // BIC 코드의 사용자 입력이 올바른지 확인
   if (!validateBICInput(bic)) {

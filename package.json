@@ -4,7 +4,7 @@
   "version": "1.0.5",
   "description": "A simple bic Validator",
   "main": "src/index.cjs",
-  "module": "src/index.esm.js",
+  "module": "src/index.js",
   "types": "src/index.d.ts",
   "exports": {
     ".": {
@@ -14,6 +14,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "rollup": "^4.13.0"
   }
 }

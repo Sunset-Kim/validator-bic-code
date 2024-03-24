@@ -1,7 +1,6 @@
-const { BIC_LENGTH, OWNER_CODE_LENGTH, EQUIPMENT_CATEGORY_CODE, ALPHABET_TO_NUMBER } = require('./bic-code.consts.cjs')
+import { BIC_LENGTH, OWNER_CODE_LENGTH, EQUIPMENT_CATEGORY_CODE, ALPHABET_TO_NUMBER } from './bic-code.consts.js';
 
-module.exports = {
-  validateBICInput(bic)  {
+export function validateBICInput(bic)  {
     // BIC 코드의 길이 검사
     if (bic.length !== BIC_LENGTH) {
       return false;
@@ -19,8 +18,9 @@ module.exports = {
       return false;
     }
     return true;
-  },
-  convertCharToNumber (char) {
+  };
+
+export function convertCharToNumber (char) {
     return (
-      ALPHABET_TO_NUMBER[char] ??parseInt(char, 10)    )    },
-}
+      ALPHABET_TO_NUMBER[char] ??parseInt(char, 10)    )
+};

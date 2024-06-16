@@ -92,8 +92,4 @@ function validateFullBIC(bic) {
   return calculatedCheckDigitOnePlace === parseInt(userCheckDigit, 10);
 }
 
-var index = {
-  validateFullBIC: validateFullBIC
-};
-
-module.exports = index;
+exports.validateFullBIC = validateFullBIC;

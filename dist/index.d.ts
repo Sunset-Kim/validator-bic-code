@@ -10,8 +10,4 @@
  */
 declare function validateFullBIC(bic: string): boolean;
 
-declare const _default: {
-    validateFullBIC: typeof validateFullBIC;
-};
-
-export { _default as default };
+export { validateFullBIC };

@@ -1,5 +1,3 @@
 import { validateFullBIC } from './bic-code'
 
-export default {
-  validateFullBIC,
-}
+export { validateFullBIC }

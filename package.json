@@ -1,7 +1,7 @@
 {
   "name": "validator-bic-code",
   "type": "module",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "A simple bic Validator",
   "main": "dist/bic-code.cjs",
   "exports": {
